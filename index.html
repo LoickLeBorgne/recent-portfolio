@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="css/style.css" rel="stylesheet" />
+  <link rel="stylesheet" href="dist/style.css" />
+  <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="scroll-control">
+    <span class="one bubble"></span>
+    <span class="two bubble"></span>
+    <span class="three bubble"></span>
+    <span class="four bubble"></span>
+  </div>
+
+
+  <nav class="nav__color navigation fixed w-full z-10 bg-transparent transition-colors duration-500">
+    <div class="max-w-screen-xl flex flex-wrap justify-center items-center mx-auto p-4">
+      <div class="w-full  md:w-auto" id="navbar-default">
+        <ul class="font-medium flex p-4 md:p-0  justify-center md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white">
+          <li>
+            <a href="#home" class="block text-l text-secondary py-2 pl-3 pr-4 md:p-0" aria-current="page">Accueil</a>
+          </li>
+          <li>
+            <a href="#about" class="block text-l font-thin py-2 pl-3 pr-4 md:border-0 md:p-0">A propos</a>
+          </li>
+          <li>
+            <a href="#project" class="block text-l  font-thin py-2 pl-3 pr-4 md:border-0 md:p-0">Projet</a>
+          </li>
+          <li>
+            <a href="#contact" class="block text-l  font-thin font-bold py-2 pl-3 pr-4 md:border-0 md:p-0">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="scroll s-one" data-section-name="s-one">
+    <div class="header finisher-header h-screen h-screen-md">
+      <div class="flex p-4 h-screen lg:flex-col auto-flex-col mx-auto  max-w-screen-xl justify-between items-center" id="home">
+        <div class="w-1/3 w-50-md intro__text lg:flex-col">
+          <h1 class="font-bold text-3xl">
+            Développeur web <span class="green">Full-Stack</span>
+          </h1>
+          <p class="font-thin text-l mt-3">
+            Je m'appelle Loïck et j'ai 22 ans, je suis passionné par le développement web depuis assez longtemps,
+            j'adore manipuler des serveurs, coder, créer et apprendre.
+          </p>
+          <a href="#about" class="btn-continue mt-4 relative inline-flex items-center justify-center px-10 py-4 overflow-hidden font-medium tracking-tighter text-white bg-gray-800 group">
+            <span class="absolute w-0 h-0 transition-all duration-500 ease-out bg-green-500 group-hover:w-56 group-hover:h-56"></span>
+            <span class="absolute inset-0 w-full h-full -mt-1 opacity-30 bg-gradient-to-b from-transparent via-transparent to-gray-700"></span>
+            <span class="relative">Continuer</span>
+          </a>
+        </div>
+
+        <div class="img__container">
+          <img class="h-48 w-full object-cover md:h-full md:w-48 " src="profil.png" alt="Une image du développeur web front-end Loïck" class="rounded__circle max-w-full h-auto rounded-full border-none rounded-full align-middle" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="scroll s-two" data-section-name="s-two">
+    <div class="flex mx-auto auto-flex-col h-full justify-between items-center max-w-screen-xl" id="about">
+      <div class="w-1/3 intro__text w-50-md w-50-sm">
+        <img src="images/logo/character.png" class="mx-auto" alt="Une image d'un personnage en pixel" />
+        <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center green">A propos de moi</h2>
+        <p class="font-thin text-center text-l mt-3">
+          J'ai une assez bonne connaissance dans l'hardware, j'adore regarder des vidéos sur différents sujets de l'informatique.
+          Ce qui me passionne c'est de pouvoir créer des serveurs de jeux communautaires et pouvoir les configurer à sa guise.
+          Je m'intéresse à côté sur la cybersécurité, je pense que c'est ma deuxième passion à côté de ça.
+        </p>
+        <p class="font-thin text-center text-l mt-3 mb-4">Réseau social :</p>
+        <div class="social__link flex justify-center">
+          <a href="https://github.com/LoickLeBorgne" target="_blank"><img href="test.com" target="_blank" class="p-2" src="images/logo/github.png" alt="Logo GitHub"></a>
+          <a href="https://www.linkedin.com/in/rikudev/" target="_blank"><img class="p-2" src="images/logo/linkedin.png" alt="Logo Linkedin"></a>
+        </div>
+      </div>
+      
+
+      <div class="px-4 w-6/12 card__container">
+        <img src="profil.png" alt="Une image du développeur web front-end Loïck" class="about__img max-w-full h-auto" />
+      </div>
+      <div class="w-1/3 intro__text">
+        <div class="langage text-center">
+          <p class="text-2xl">
+            Langage <span class="green font-bold"> Front-End</span>
+          </p>
+          <div class="langage__img flex mb-4 justify-center mt-4">
+            <img src="images/logo/html.png" alt="Logo HTML" />
+            <img src="images/logo/css.png" alt="Logo CSS" />
+            <img src="images/logo/js.png" alt="Logo JavaScript" />
+          </div>
+        </div>
+        <div class="langage text-center">
+          <p class="text-2xl">
+            Langage <span class="blue font-bold"> Back-End</span>
+          </p>
+          <div class="langage__img flex mb-4 justify-center mt-4">
+            <img src="images/logo/php.png" alt="Logo php" />
+            <img src="images/logo/symfony.png" alt="Logo symfony" />
+          </div>
+        </div>
+        <div class="langage text-center">
+          <p class="text-2xl">
+            Système<span class="sys font-bold"> d'exploitation</span>
+          </p>
+          <div class="langage__img flex mb-4 justify-center mt-4">
+            <img src="images/logo/windows.png" alt="Logo Windows" />
+            <img src="images/logo/linux.png" alt="Logo Linux" />
+            <img src="images/logo/ubuntu.png" alt="Logo Ubuntu" />
+            <img src="images/logo/centos.png" alt="Logo Centos" />
+          </div>
+        </div>
+        <div class="langage text-center">
+          <p class="text-2xl">
+            <span class="framework font-bold">FrameWork</span>
+          </p>
+          <div class="langage__img flex justify-center mt-4">
+            <img src="images/logo/tailwind.png" alt="Logo Tailwind" />
+            <img src="images/logo/bootstrap.png" alt="Logo Bootstrap" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="project" class="scroll s-threes"  data-section-name="s-three">
+    <div class="container__project__scrollreveal container flex flex-col mx-auto items-center justify-center max-w-screen-xl scroll">
+      <h2 class="mb-4 mt-4 text-4xl tracking-tight font-extrabold text-center green">Mes projets</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div class="item" id="1">
+          <img id="img__project" src="images/projet/firstportfolio.png" alt="Une image d'une réalisation du développeur Loïck" />
+          <div class="text">
+            <h3 class="font-bold text-xl">Portfolio</h3>
+            <p class="font-thin text-l">Mon premier portfolio</p>
+          </div>
+          <div class="button__project">
+            <a href="#_" class="button__project__border relative inline-flex items-center justify-center px-10 py-4 overflow-hidden font-medium tracking-tighter text-white bg-gray-800 group">
+              <span class="absolute w-0 h-0 transition-all duration-500 ease-out bg-green-500 group-hover:w-56 group-hover:h-56"></span>
+              <span class="absolute inset-0 w-full h-full -mt-1 opacity-30 bg-gradient-to-b from-transparent via-transparent to-gray-700"></span>
+              <span class="relative">Voir plus</span>
+            </a>
+          </div>
+        </div>
+        <div class="item" id="2">
+          <img id="img__project" src="images/projet/secondportfolio.PNG" alt="Une image d'une réalisation du développeur Loïck" />
+          <div class="text">
+            <h3 class="font-bold text-xl">Portfolio 2</h3>
+            <p class="font-thin text-l">Mon deuxième portfolio</p>
+          </div>
+          <div class="button__project">
+            <a href="#_" class="button__project__border relative inline-flex items-center justify-center px-10 py-4 overflow-hidden font-medium tracking-tighter text-white bg-gray-800 group">
+              <span class="absolute w-0 h-0 transition-all duration-500 ease-out bg-green-500 group-hover:w-56 group-hover:h-56"></span>
+              <span class="absolute inset-0 w-full h-full -mt-1 opacity-30 bg-gradient-to-b from-transparent via-transparent to-gray-700"></span>
+              <span class="relative">Voir plus</span>
+            </a>
+          </div>
+        </div>
+        <div class="item" id="3">
+          <img id="img__project" src="images/projet/webintegration.PNG" alt="Une image d'une réalisation du développeur Loïck" />
+          <div class="text">
+            <h3 class="font-bold text-xl">Intégration Front-End</h3>
+            <p class="font-thin text-l">Intégration via une maquette graphique</p>
+          </div>
+          <div class="button__project">
+            <a href="#_" class="button__project__border relative inline-flex items-center justify-center px-10 py-4 overflow-hidden font-medium tracking-tighter text-white bg-gray-800 group">
+              <span class="absolute w-0 h-0 transition-all duration-500 ease-out bg-green-500 group-hover:w-56 group-hover:h-56"></span>
+              <span class="absolute inset-0 w-full h-full -mt-1 opacity-30 bg-gradient-to-b from-transparent via-transparent to-gray-700"></span>
+              <span class="relative">Voir plus</span>
+            </a>
+          </div>
+        </div>
+        <div class="item" id="4">
+          <img id="img__project" src="images/projet/snakegame.PNG" alt="Une image d'une réalisation du développeur Loïck" />
+          <div class="text">
+            <h3 class="font-bold text-xl">SnakeGame</h3>
+            <p class="font-thin text-l">Création du jeu SnakeGame</p>
+          </div>
+          <div class="button__project">
+            <a href="#_" class="button__project__border relative inline-flex items-center justify-center px-10 py-4 overflow-hidden font-medium tracking-tighter text-white bg-gray-800 group">
+              <span class="absolute w-0 h-0 transition-all duration-500 ease-out bg-green-500 group-hover:w-56 group-hover:h-56"></span>
+              <span class="absolute inset-0 w-full h-full -mt-1 opacity-30 bg-gradient-to-b from-transparent via-transparent to-gray-700"></span>
+              <span class="relative">Voir plus</span>
+            </a>
+          </div>
+        </div>
+        <div class="item" id="5">
+          <img id="img__project" src="images/projet/todolist.PNG" alt="Une image d'une réalisation du développeur Loïck" />
+          <div class="text">
+            <h3 class="font-bold text-xl">Todo-List</h3>
+            <p class="font-thin text-l">Création d'une Todo-List en JavaScript</p>
+          </div>
+          <div class="button__project">
+            <a href="#_" class="button__project__border relative inline-flex items-center justify-center px-10 py-4 overflow-hidden font-medium tracking-tighter text-white bg-gray-800 group">
+              <span class="absolute w-0 h-0 transition-all duration-500 ease-out bg-green-500 group-hover:w-56 group-hover:h-56"></span>
+              <span class="absolute inset-0 w-full h-full -mt-1 opacity-30 bg-gradient-to-b from-transparent via-transparent to-gray-700"></span>
+              <span class="relative">Voir plus</span>
+            </a>
+          </div>
+        </div>
+        <div class="item" id="6">
+          <img id="img__project" src="images/projet/wordpress.PNG" alt="Une image d'une réalisation du développeur Loïck" />
+          <div class="text">
+            <h3 class="font-bold text-xl">WordPress</h3>
+            <p class="font-thin text-l">Création d'un site web WordPress</p>
+          </div>
+          <div class="button__project">
+            <a href="#_" class="button__project__border relative inline-flex items-center justify-center px-10 py-4 overflow-hidden font-medium tracking-tighter text-white bg-gray-800 group">
+              <span class="absolute w-0 h-0 transition-all duration-500 ease-out bg-green-500 group-hover:w-56 group-hover:h-56"></span>
+              <span class="absolute inset-0 w-full h-full -mt-1 opacity-30 bg-gradient-to-b from-transparent via-transparent to-gray-700"></span>
+              <span class="relative">Voir plus</span>
+            </a>
+          </div>
+        </div>
+        <div class="item" id="7">
+          <img id="img__project" src="images/projet/php.png" alt="Une image d'une réalisation du développeur Loïck" />
+          <div class="text">
+            <h3 class="font-bold text-xl">Portfolio</h3>
+            <p class="font-thin text-l">Mon premier portfolio</p>
+          </div>
+          <div class="button__project">
+            <a href="#_" class="button__project__border relative inline-flex items-center justify-center px-10 py-4 overflow-hidden font-medium tracking-tighter text-white bg-gray-800 group">
+              <span class="absolute w-0 h-0 transition-all duration-500 ease-out bg-green-500 group-hover:w-56 group-hover:h-56"></span>
+              <span class="absolute inset-0 w-full h-full -mt-1 opacity-30 bg-gradient-to-b from-transparent via-transparent to-gray-700"></span>
+              <span class="relative">Voir plus</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div id="preview" class="modal">
+        <div class="modal-content">
+          <span class="close">×</span>
+          <img id="img" src="" />
+          <div id="details">
+            <h3 class="font-bold text-xl" id="title"></h3>
+            <p class="font-thin text-l" id="info"></p>
+            <div class="button" id="live">
+              <a href="#_" class="relative inline-flex items-center justify-center px-10 py-4 overflow-hidden font-medium tracking-tighter text-white bg-gray-800 group">
+                <span class="absolute w-0 h-0 transition-all duration-500 ease-out bg-green-500 group-hover:w-56 group-hover:h-56"></span>
+                <span class="absolute inset-0 w-full h-full -mt-1 opacity-30 bg-gradient-to-b from-transparent via-transparent to-gray-700"></span>
+                <span class="relative">Voir plus</span>
+              </a>
+            </div>
+            <i class="fab fa-github-square" id="github" aria-hidden="true"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  
+<section class="scroll s-four" data-section-name="s-four" id="contact">
+  <div class="py-8 lg:py-16 h-screen px-4 flex flex-col justify-center mx-auto max-w-screen-md">
+    <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center green">Contact</h2>
+    <p class="mb-8 lg:mb-16 font-light text-center text-white  sm:text-xl">Vous avez une question ?</p>
+    <form action="send.php" method="POST" class="space-y-8">
+      <div>
+        <label for="email" class="block mb-2 text-sm font-medium green">Votre e-mail</label>
+        <input type="email" name="email" id="email" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="exemple@email.com" required>
+      </div>
+      <div>
+        <label for="subject" class="block mb-2 text-sm font-medium green ">Objet</label>
+        <input type="text" name="subject" id="subject" class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="L'objet de votre demande" required>
+      </div>
+      <div class="sm:col-span-2">
+        <label for="message" class="block mb-2 text-sm font-medium green">Votre message </label>
+        <textarea id="message" name="message" rows="6" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Votre message..."></textarea>
+      </div>
+      <button type="submit" name="send">
+        <a class="relative inline-flex items-center justify-center px-10 py-4 overflow-hidden font-medium tracking-tighter text-white bg-gray-800 group">
+          <span class="absolute w-0 h-0 transition-all duration-500 ease-out bg-green-500 group-hover:w-56 group-hover:h-56"></span>
+          <span class="absolute inset-0 w-full h-full -mt-1 opacity-30 bg-gradient-to-b from-transparent via-transparent to-gray-700"></span>
+          <span class="relative">Envoyer</span>
+        </a>
+      </button>
+    </form>
+    <p class="text-center text-white font-bold  sm:text-xl"><span class="green">Confidentialité garantie :</span></p>
+    <p class="text-center text-white font-bold sm:text-l"><span class="green">Aucune donnée enregistrée, aucune information stockée.</span></p>
+    <p class="font-light text-center text-white  sm:text-l">Le formulaire est conçu pour ne collecter aucune information personnelle et ne stocker aucune donnée sensible.
+      Remplissez-le en toute tranquillité, en sachant que vos informations resteront confidentielles. Votre vie privée est respectée et nous ne partagerons, vendrons ou utiliserons pas vos données de manière non autorisée.
+    </p>
+  </div>
+</section>
+
+
+
+
+  <script>
+    var messageElement = document.getElementById('send_succes_email');
+
+    messageElement.classList.add('fade-out-element');
+
+    setTimeout(function() {
+      messageElement.remove();
+    }, 3500);
+  </script>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.21/jquery.scrollify.min.js" integrity="sha512-UyX8JsMsNRW1cYl8BoxpcamonpwU2y7mSTsN0Z52plp7oKo1u92Xqfpv6lOlTyH3yiMXK+gU1jw0DVCsPTfKew==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!----------------------------------------------------------------------------------------------------------------->
+  <!-- Script pour l'animation des sections + ScrollReveal -->
+  <script src="js/section-animation.js"></script>
+  <!-- Script pour la navbar Sticky -->
+  <script src="js/stickynav.js"></script>
+  <!-- Script pour l'animation au survol de la card -->
+  <script src="js/opencardanimation.js"></script>
+  <!--------------------- Script pour le header + Particules ---------------------->
+  <script src="js/finisher-header.es5.min.js" type="text/javascript"></script>
+  <script src="js/particules.js"></script>
+  <!-------------------------------------------------------------------------------->
+  <!--------------------- CDN ScrollReveal ---------------------->
+  <script src="https://unpkg.com/scrollreveal"></script>
+</body>
+
+</html>
